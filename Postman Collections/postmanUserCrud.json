@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "4f394653-af55-484c-8299-75c0e75d24bd",
+		"name": "sayaAssignment",
+		"description": "To perform CRUD operations on users using Postman. Below is an explanation for each:\n\n1\\. Create User:  \n\\- To create a new user, use the POST method and enter the URL for creating a user. Additionally, in the Body section of the request, input the necessary information for creating the user (such as firsname, lastname, etc.).\n\n2\\. Get User:  \n\\- To retrieve user data, use the GET method and input the URL for fetching user information.\n\n3\\. Update User:  \n\\- For updating user information, utilize the PUT or PATCH method and specify the URL for updating a specific user. In the Body section, include the updated user details.\n\n4\\. Delete User:  \n\\- To delete a user, use the DELETE method and provide the URL for deleting a particular user.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "findUser",
+			"id": "ed032d63-2600-4934-a1c2-71d5ecddd977",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/users/66890d66b0186068caea3863",
+				"description": "put id in url to find user"
+			},
+			"response": []
+		},
+		{
+			"name": "getUsers",
+			"id": "340e0c22-f567-4bd0-bc16-1402be92e2f8",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/users"
+			},
+			"response": []
+		},
+		{
+			"name": "deleteUser",
+			"id": "cecccd9e-a35f-4b75-8df9-4a8ba80daf3a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:3000/users/66890d66b0186068caea3863",
+				"description": "put id in url to delete user"
+			},
+			"response": []
+		},
+		{
+			"name": "updateUser",
+			"id": "6bd811c1-288d-470c-aeb7-fd3ed487ac4f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstname\": \"2aa.\",\n    \"lastname\": \"wwwwwww\",\n    \"nationalID\": \"2222920\",\n    \"phonenumber\": \"09339935281\",\n    \"gender\": \"Femae\",\n    \"telephone\": \"02177040165\",\n    \"address\": \"تهران اندیشه\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/users/668903237fe4f39d0c1798e3",
+				"description": "put id in url to find user and update with body information"
+			},
+			"response": []
+		},
+		{
+			"name": "createUser",
+			"id": "28106f93-8826-41c1-92cc-f85ceeb626f8",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstname\": \"maryam\",\n    \"lastname\": \"gsdfghjkh\",\n    \"nationalID\": \"1234567\",\n    \"phonenumber\": \"09339935281\",\n    \"gender\": \"Female\",\n    \"telephone\": \"02177040165\",\n    \"address\": \"تهران اندیشه\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/users/",
+				"description": "create new user with body information"
+			},
+			"response": []
+		}
+	]
+}
