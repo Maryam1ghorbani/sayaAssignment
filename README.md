@@ -1,10 +1,6 @@
 # CRUD IN NODEJS WITH MONGODB
 
-. GET /users - Retrieve all users.
-• POST /users - Create a new user.
-• GET /users/:id - Retrieve a specific user by ID.
-• PUT /users/:id - Update a specific user by ID.
-• DELETE /users/:id - Delete a specific user by ID.
+. use [postmanCollection](https://github.com/Maryam1ghorbani/sayaAssignment/blob/master/Postman%20Collections/postmanUserCrud.json) to see the ducument of project.
 
 ## Installation
 

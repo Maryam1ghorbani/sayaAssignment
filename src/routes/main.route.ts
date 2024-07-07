@@ -6,7 +6,7 @@ import {
   getAllUsers,
   findUserById,
   deleteUserById,
-} from '../userController/user.route';
+} from '../Controller/user.route';
 import express from 'express';
 
 const userRoutes = Router();
