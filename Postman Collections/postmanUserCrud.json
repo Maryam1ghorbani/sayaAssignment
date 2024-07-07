@@ -42,7 +42,8 @@
 			"request": {
 				"method": "DELETE",
 				"header": [],
-				"url": "http://localhost:3000/users/66890d66b0186068caea3863"
+				"url": "http://localhost:3000/users/66890d66b0186068caea3863",
+				"description": "put id in url to delete user"
 			},
 			"response": []
 		},
@@ -64,7 +65,8 @@
 						}
 					}
 				},
-				"url": "http://localhost:3000/users/668903237fe4f39d0c1798e3"
+				"url": "http://localhost:3000/users/668903237fe4f39d0c1798e3",
+				"description": "put id in url to find user and update with body information"
 			},
 			"response": []
 		},
@@ -86,7 +88,8 @@
 						}
 					}
 				},
-				"url": "http://localhost:3000/users/"
+				"url": "http://localhost:3000/users/",
+				"description": "create new user with body information"
 			},
 			"response": []
 		}
